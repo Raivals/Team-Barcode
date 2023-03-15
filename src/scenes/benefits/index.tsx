@@ -13,18 +13,21 @@ import ActionButton from "@/shared/ActionButton";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
-    description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Ambiance.",
+    description:
+      "Une bonne ambiance générale malgré les quelques saltinbanqueries de Gaulard et Zav 🤡. ",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
-    description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Entre-aide",
+    description:
+      "Session d'entraînement & Deck-building dans le calme et la bonne humeur.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
-    description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Un niveau général moyen (Merci Boody).",
+    description:
+      "Une équipe remplit de clowns mais le niveau et relevé par quelques irréductibles tryharders.",
   },
 ];
 
@@ -41,7 +44,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="quisommesnous?" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -57,11 +60,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
           className="md:my-5 md:w-3/5"
         >
-          <HText> MORE THAN JUSST GYM.</HText>
+          <HText> PLUS QU'UNE SIMPLE ÉQUIPE. </HText>
           <p className="my-5 text-sm">
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxx.
+            Basé sur la bonne entente et la convivialité, la team Barcode
+            s'entraîne régulièrement dans le sérieux et la bonne humeur.
           </p>
         </motion.div>
 
@@ -109,8 +111,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    DIVERSITÉ GÉNÉRALE DANS LES DECKS DE LA{" "}
+                    <span className="text-primary-500">TEAM</span>
                   </HText>
                 </motion.div>
               </div>
@@ -127,10 +129,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
-              </p>
-              <p className="mb-5">
-                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+                "En générale, chaques personnes de l'équipe utilise un deck
+                différent, cela permet de pouvoir s'entraîner sur la quasi
+                totalité des decks de la méta."
               </p>
             </motion.div>
             {/* BUTTON */}

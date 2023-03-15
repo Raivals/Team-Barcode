@@ -23,7 +23,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactUs" className="mx-auto w-5/6 pt-24 pb-32">
+    <section id="nouscontacter" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
@@ -40,11 +40,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">
+              VOUS VOULEZ NOUS REJOINDRE ?
+            </span>{" "}
+            BAH NON MAIS JE LAISSE LE FORMULAIRE.
           </HText>
-          <p className="my-5">
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
-          </p>
         </motion.div>
         {/* FORM AND IMAGE */}
         <div className="mt-10 justify-between gap-8 md:flex">
@@ -138,7 +138,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext ">
+            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] ">
               <img
                 src={ContactUsPageGraphic}
                 alt="contact-us-page-graphic"

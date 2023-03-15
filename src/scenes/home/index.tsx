@@ -18,7 +18,7 @@ const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="accueil" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
@@ -39,15 +39,15 @@ const Home = ({ setSelectedPage }: Props) => {
             className="md:-mt-20"
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
+              <div className="before:absolute before:-top-20 before:-left-10 before:z-[-1] md:before:content-evolvetext">
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
 
             <p className="mt-8 text-sm">
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              La meilleure équipe de France est enfin annoncé ! Avec un total de
+              110 points avec UN SEUL joueur, la team Barcode ne prévoit que du
+              bon pour les évènements futurs.
             </p>
           </motion.div>
           {/* ACTIONS */}
@@ -62,9 +62,6 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
             className="mt-8 flex items-center gap-8"
           >
-            <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
-            </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
@@ -84,11 +81,23 @@ const Home = ({ setSelectedPage }: Props) => {
       {/* SPONSORS */}
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="mx-autp w-5/6">
-            <div className="ml-20 flex w-3/5 items-center justify-between gap-8">
-              <img src={SponsorRedbull} alt="redbull-sponsor" />
-              <img src={SponsorForbes} alt="forbes-sponsor" />
-              <img src={SponsorFortune} alt="fortune-sponsor" />
+          <div className="mx-auto w-5/6">
+            <div className="ml-40 flex w-4/5 items-center justify-between gap-8">
+              <img
+                className="h-[50px]"
+                src={SponsorRedbull}
+                alt="redbull-sponsor"
+              />
+              <img
+                className="h-[50px]"
+                src={SponsorForbes}
+                alt="forbes-sponsor"
+              />
+              <img
+                className="h-[50px]"
+                src={SponsorFortune}
+                alt="fortune-sponsor"
+              />
             </div>
           </div>
         </div>
