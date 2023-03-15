@@ -6,7 +6,7 @@ import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
-import SponsorRedbull from "@/assets/SponsorRedbull.png";
+/*import SponsorRedbull from "@/assets/SponsorRedbull.png";*/
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -83,11 +83,11 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="ml-40 flex w-4/5 items-center justify-between gap-8">
-              <img
+              {/*<img
                 className="h-[50px]"
                 src={SponsorRedbull}
                 alt="redbull-sponsor"
-              />
+      /> */}
               <img
                 className="h-[50px]"
                 src={SponsorForbes}
